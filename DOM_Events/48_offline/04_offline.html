@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>This example uses the addEventListener() method to attach a "online" and "offline" event to the window object.</p>
+
+	<p>Open the File menu and click on "Work Offline" to toggle between working online and offline.</p>
+
+	<p><strong>Note:</strong> The ononline and onoffline events are only supported in Firefox and Internet Explorer version 8 to 10.</p>
+
+	<script>
+	window.addEventListener("online", onFunction);
+	window.addEventListener("offline", offFunction);
+
+	function onFunction() {
+		alert ("Your browser is working online.");
+	}
+
+	function offFunction() {
+  		alert ("Your browser is working offline.");
+	}
+	</script>
+</body>
+</html>

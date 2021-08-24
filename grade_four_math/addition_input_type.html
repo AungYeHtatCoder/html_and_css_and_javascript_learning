@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Addition in JavaScript</title>
+</head>
+<body>
+	<h1>Addition in JavaScript</h1>
+	<label for="">Enter First Number</label>
+	<input type="text" id="num1">
+	<br>
+	<label for="">Enter Second Number</label>
+    <input type="text" id="num2">
+    <br>
+    <!-- <input type="button" value="Calculate Answer" onclick="Calculate()"> -->
+    <button onclick="Calculate()">တွက်ပါ</button>
+    <br>
+    <p>Calculate Answer is:<span id="show_answer"></span></p>
+
+    <script>
+    	function Calculate (num1, num2) {
+    		var x = document.getElementById('num1').value;
+    		var y = document.getElementById('num2').value;
+    		var z = 0;
+    		z = Number(x) + Number(y);
+
+            document.getElementById('show_answer').innerHTML = z;
+    	}
+    </script>
+</body>
+</html>

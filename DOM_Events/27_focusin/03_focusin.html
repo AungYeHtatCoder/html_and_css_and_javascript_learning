@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>This example uses the HTML DOM to assign an "onfocusin" event to an input element.</p>
+
+	Enter your name: <input type="text" id="fname">
+
+	<p><strong>Note:</strong> This example may not work as expected in Chrome, Safari and Opera 15+.</p>
+
+	<script>
+	document.getElementById("fname").onfocusin = function() {myFunction()};
+
+	function myFunction() {
+  document.getElementById("fname").style.backgroundColor = "red";
+	}
+	</script>
+</body>
+</html>

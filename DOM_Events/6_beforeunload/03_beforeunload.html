@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<P>This example uses the HTML  DOM to assign an " onbeforeunload" avent to the window object.</P>
+
+	<p>Colse this window, press F5 or click on the link below to inboke the onbiforeunload event.</p>
+
+	<a href="https://www.w3schools.com">Click here to go to w3schools.com</a>
+
+	<script>
+	window.onbiforeunload = function (event) {
+		event.returnValue = "Write something clever here..";
+	}
+	</script>
+</body>
+</html>

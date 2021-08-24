@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>This example uses the HTML DOM to assign an "onfocusout" event to an input element.</p>
+
+    <p>Write something in the input field, and then click outside the field to lose focus.</p>
+
+    <input type="text" id="fname">
+
+    <p><strong>Note:</strong> This example may not work as expected in Chrome, Safari and Opera 15+.</p>
+
+   <script>
+   document.getElementById("fname").onfocusout = function() {myFunction()};
+
+   function myFunction() {
+     alert("Input field lost focus.");
+   }
+   </script>
+</body>
+</html>

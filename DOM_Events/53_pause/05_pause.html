@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>This example demonstrates how to assign an "onpause" event to an audio element.</p>
+
+	<p>Play and pause the video.</p>
+
+	<audio controls onpause="myFunction()">
+  	<source src="video/horse.ogg" type="audio/ogg">
+  	<source src="video/horse.mp3" type="audio/mpeg">
+  	Your browser does not support the audio element.
+	</audio>
+
+	<script>
+	function myFunction() {
+  	alert("The audio was paused");
+	}
+	</script>
+</body>
+</html>

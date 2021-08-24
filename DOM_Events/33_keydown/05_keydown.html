@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>Press and hold down a key inside the text field to set a red background color. Release the key to set a green background color.</p>
+
+	<input type="text" id="demo" onkeydown="keydownFunction()" onkeyup="keydownFunction()">
+
+	<script>
+	function keydownFunction() {
+		document.getElementById("demo").style.backgroundColor = "red";
+	}
+
+	function keydownFunction() {
+		document.getElementById("demo").style.backgroundColor = "green";
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>This example uses the HTML DOM to assign an "ononline" and "onoffline" event to a body element.</p>
+
+	<p>Open the File menu and click on "Work offline" to toggle between workeng online and offline.</p>
+
+	<p><strong>Note:</strong> The ononline and onoffline events are only supported in Firefox and Inter net Explorer version 8 to 10.</p>
+
+	<script>
+	document.getElementById("BODY") [0].ononline = function() {onFunction()};
+	document.getElementById("BODY")[0].onoffline = function() {offFunction()};
+
+	function onFunction() {
+		alert ("Your borwser is working online.");
+	}
+
+	function offFunction() {
+		alert ("Your borwser is working offline.");
+	}
+	</script>
+</body>
+</html>

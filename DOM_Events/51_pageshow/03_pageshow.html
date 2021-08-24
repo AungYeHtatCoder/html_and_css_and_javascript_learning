@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>This example uses the HTML DOM to  a body element.</p>
+
+	<p><strong>Note:</strong> The onpageshow event is not supported in Internet Explorer 10 and earlier versions.</p>
+
+	<h1 id="demo"></h1>
+
+	<script>
+	document.getElementsByTagName("BODY")[0].onpageshow = function() {myFunction()};
+
+	function myFunction() {
+		document.getElementById("demo").innerHTML = "Welcome To My Homepage!";
+	};
+
+	 /*This is equivalent to assigning the event to the window object: 
+	 window.onpageshow = function() {
+	 	document.getElementById("demo").innerHTML = "Welcome To My Homepage!";
+	 };
+	 */
+	</script>
+</body>
+</html>

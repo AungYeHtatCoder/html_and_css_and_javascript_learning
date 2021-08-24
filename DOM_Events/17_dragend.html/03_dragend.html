@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+	.droptarget {
+		float: left;
+		width: 100px;
+		height: 35px;
+		margin: 15px;
+		padding: 10px;
+		border: 1px solid #aaaaaa;
+	}
+	</style>
+</head>
+<body>
+	
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, tempora similique. Harum ad impedit, fugit. Rerum facilis odit consectetur sapiente.</p>
+
+	<p>Drag the p element back and forth between the two rectangles:</p>
+
+	<div class="droptarget">
+		<p draggable="true" id="dragtarget">Drag me!</p>
+	</div>
+
+	<div class="droptarget"></div>
+
+	<p style="clear:both;"><strong>Note:</strong> drag events are not supported in Internet Explorer * and earlier versions or Safari 5.1 and earlier versions.</p>
+
+	<p id="demo"></p>
+
+	<script>
+	/* Evebts fered ib the drag target */
+	document.ondragstart = function(event) {
+		event.dataTransfer.setData("Text", event.target.id);
+		document.getElementById("demo").innerHTML = "Started to drag the p element.";
+	};
+
+	document.ondragend = function(event) {
+		document.getElementById("demo").innerHTML = "Fished dragging the p element.";
+	};
+
+	/* Events fired on the drop target */
+	document.ondragover = function(event) {
+		event.preventDefault();
+	};
+
+	document.odrop = function(event) {
+		event.preventDefault();
+		if (event.target.className == "droptarget") {
+			var data = event.dataTransfer.getData("Text");
+			event.target.appendChild(document.getElementById(data));
+		}
+	};
+	</script>
+</body>
+</html>

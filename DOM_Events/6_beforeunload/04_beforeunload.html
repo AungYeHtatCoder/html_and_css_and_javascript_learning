@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>This example uses the addEventListener() method to attach a "beforeunload" event to the window object.</p>
+
+	<p>Colse this window, press F5 or clock on the link below to inboke the beforeunload event.</p>
+
+	<a href="https://www.w3schools.com">Click here to go to w3schools.com</a>
+
+	<script>
+	window.addEventListener("beforeunload", function(event) {
+		event.returnValue = "Write something clever here..";
+	}
+	</script>
+</body>
+</html>

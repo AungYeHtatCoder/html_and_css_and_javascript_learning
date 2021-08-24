@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<p>This example uses the HTML DOM to assign an "onafterprint" event to a body element.</p>
+
+	<h1>Try to print this document</h1>
+	<p><b>Tip:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit recusandae officiis, dolorem commodi pariatur necessitatibus sapiente iure distinctio quis, voluptas illo laborum itaque velit consequuntur adipisci, illum neque voluptate quibusdam.</p>
+	<p><b>Note:</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt consequatur, corrupti cupiditate facilis? Totam exercitationem velit iure dignissimos. Similique voluptatibus voluptatum aspernatur doloribus? Totam non rerum eligendi quos, ipsa numquam.</p>
+	<p><b>Note:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quasi nostrum, iste temporibus ducimus voluptatem earum fuga error beatae ea placeat nemo exercitationem, similique quae tempora id veritatis qui commodi?</p>
+
+	<script>
+		document.getElementById("BODY")[0].onafterprint = function() {myFunction()};
+
+ 	function myFunction() {
+ 		alert("This document is now being printed");
+ 	}
+	</script>
+</body>
+</html>

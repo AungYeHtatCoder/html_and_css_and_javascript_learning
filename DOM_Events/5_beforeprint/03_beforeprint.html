@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>This example uses the HTML DOM to assign an "onbeforeprint" event to a body element.</p>
+
+ 	<h1>Try to print this document</h1>
+	<p><b>Tip:</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam consequuntur alias quibusdam dolorem veritatis exercitationem, eum, odit commodi eius, sequi fugit architecto molestias pariatur suscipit illo. Maxime hic, animi nemo.</p>
+	<p><b>Note:</b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus alias esse nam exercitationem, atque, voluptate ad eos ducimus animi earum? Quasi doloribus officiis fuga tenetur magni beatae nam laudantium nulla. </p>
+ 	<script>
+	document.getElementsByTagName("BODY")[0].onbeforeprint = function() {myFunction()};
+
+	function myFunction() {
+  	alert("You are about to print this document!");
+}
+	</script>
+</body>
+</html>

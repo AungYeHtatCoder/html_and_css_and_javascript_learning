@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>This example uses the addEvenListener() method to attach a "baforeprint" event to the window object.</p>
+
+	<h1>Try to print this document</h1>
+	<p><b>Tip:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum quis eveniet facere minima minus vero illo et aperiam commodi. Reprehenderit voluptatem explicabo tempore, consequatur cum. Magnam, veniam necessitatibus quas.</p>
+	<p><b>Note:</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nesciunt perspiciatis, natus cumque ratione eligendi repellendus at officiis dolores, ipsum asperiores quisquam nam ipsa quae ea veritatis neque? Esse, quod?</p>
+
+	<script>
+	window.addEvenListener("beforeprint", myFunction);
+
+	function myFunction() {
+		alert("You are about to print this document!");
+	}
+	</script>
+</body>
+</html>
